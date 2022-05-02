@@ -1,0 +1,17 @@
+C:\Users\Alptekin\source\repos\VeriTabaniProje\bin\Debug\net6.0-windows\VeriTabaniProje.exe
+C:\Users\Alptekin\source\repos\VeriTabaniProje\bin\Debug\net6.0-windows\VeriTabaniProje.deps.json
+C:\Users\Alptekin\source\repos\VeriTabaniProje\bin\Debug\net6.0-windows\VeriTabaniProje.runtimeconfig.json
+C:\Users\Alptekin\source\repos\VeriTabaniProje\bin\Debug\net6.0-windows\VeriTabaniProje.dll
+C:\Users\Alptekin\source\repos\VeriTabaniProje\bin\Debug\net6.0-windows\VeriTabaniProje.pdb
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.csproj.AssemblyReference.cache
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.Form1.resources
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.csproj.GenerateResource.cache
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.AssemblyInfoInputs.cache
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.AssemblyInfo.cs
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.csproj.CoreCompileInputs.cache
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.dll
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\refint\VeriTabaniProje.dll
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.pdb
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.genruntimeconfig.cache
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\ref\VeriTabaniProje.dll
