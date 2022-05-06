@@ -15,3 +15,10 @@ C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\refint\V
 C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.pdb
 C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.genruntimeconfig.cache
 C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\ref\VeriTabaniProje.dll
+C:\Users\Alptekin\source\repos\VeriTabaniProje\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Alptekin\source\repos\VeriTabaniProje\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Alptekin\source\repos\VeriTabaniProje\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Alptekin\source\repos\VeriTabaniProje\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Alptekin\source\repos\VeriTabaniProje\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Alptekin\source\repos\VeriTabaniProje\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.csproj.CopyComplete

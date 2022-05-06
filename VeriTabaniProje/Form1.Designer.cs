@@ -28,88 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
+            this.grpRezervasyonEkrani = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.btnOnay = new System.Windows.Forms.Button();
+            this.lblFiyat = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpCikisTarihi = new System.Windows.Forms.DateTimePicker();
+            this.dtpRezervasyonTarihi = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTelefonNo = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtRezervasyonTc = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtCvv = new System.Windows.Forms.TextBox();
+            this.txtKrediKarti = new System.Windows.Forms.TextBox();
+            this.dtpSonKullanmaTarihi = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.grpStandartRezervasyon = new System.Windows.Forms.GroupBox();
+            this.grpRandevuIptal = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnRandevuIptal = new System.Windows.Forms.Button();
+            this.btnAra = new System.Windows.Forms.Button();
+            this.dgvIptal = new System.Windows.Forms.DataGridView();
+            this.txtIptalTC = new System.Windows.Forms.TextBox();
+            this.grpRezervasyonEkrani.SuspendLayout();
+            this.grpStandartRezervasyon.SuspendLayout();
+            this.grpRandevuIptal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIptal)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // grpRezervasyonEkrani
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.dateTimePicker3);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(25, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(848, 224);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.grpRezervasyonEkrani.Controls.Add(this.radioButton1);
+            this.grpRezervasyonEkrani.Controls.Add(this.btnOnay);
+            this.grpRezervasyonEkrani.Controls.Add(this.lblFiyat);
+            this.grpRezervasyonEkrani.Controls.Add(this.label11);
+            this.grpRezervasyonEkrani.Controls.Add(this.dtpCikisTarihi);
+            this.grpRezervasyonEkrani.Controls.Add(this.dtpRezervasyonTarihi);
+            this.grpRezervasyonEkrani.Controls.Add(this.label10);
+            this.grpRezervasyonEkrani.Controls.Add(this.label9);
+            this.grpRezervasyonEkrani.Controls.Add(this.txtTelefonNo);
+            this.grpRezervasyonEkrani.Controls.Add(this.txtEmail);
+            this.grpRezervasyonEkrani.Controls.Add(this.txtRezervasyonTc);
+            this.grpRezervasyonEkrani.Controls.Add(this.txtSoyad);
+            this.grpRezervasyonEkrani.Controls.Add(this.txtAd);
+            this.grpRezervasyonEkrani.Controls.Add(this.label5);
+            this.grpRezervasyonEkrani.Controls.Add(this.label4);
+            this.grpRezervasyonEkrani.Controls.Add(this.label3);
+            this.grpRezervasyonEkrani.Controls.Add(this.label2);
+            this.grpRezervasyonEkrani.Controls.Add(this.label1);
+            this.grpRezervasyonEkrani.Location = new System.Drawing.Point(25, 12);
+            this.grpRezervasyonEkrani.Name = "grpRezervasyonEkrani";
+            this.grpRezervasyonEkrani.Size = new System.Drawing.Size(848, 224);
+            this.grpRezervasyonEkrani.TabIndex = 6;
+            this.grpRezervasyonEkrani.TabStop = false;
+            this.grpRezervasyonEkrani.Text = "Rezervasyon";
             // 
-            // button1
+            // radioButton1
             // 
-            this.button1.Location = new System.Drawing.Point(679, 189);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Onay";
-            this.button1.UseVisualStyleBackColor = true;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(491, 194);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(172, 24);
+            this.radioButton1.TabIndex = 36;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Standart Rezervasyon";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // label12
+            // btnOnay
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(623, 151);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 20);
-            this.label12.TabIndex = 34;
-            this.label12.Text = ".... TL";
+            this.btnOnay.Location = new System.Drawing.Point(679, 189);
+            this.btnOnay.Name = "btnOnay";
+            this.btnOnay.Size = new System.Drawing.Size(94, 29);
+            this.btnOnay.TabIndex = 35;
+            this.btnOnay.Text = "Onay";
+            this.btnOnay.UseVisualStyleBackColor = true;
+            this.btnOnay.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblFiyat
+            // 
+            this.lblFiyat.AutoSize = true;
+            this.lblFiyat.Location = new System.Drawing.Point(623, 151);
+            this.lblFiyat.Name = "lblFiyat";
+            this.lblFiyat.Size = new System.Drawing.Size(40, 20);
+            this.lblFiyat.TabIndex = 34;
+            this.lblFiyat.Text = ".... TL";
             // 
             // label11
             // 
@@ -120,19 +132,19 @@
             this.label11.TabIndex = 33;
             this.label11.Text = "Fiyat :";
             // 
-            // dateTimePicker3
+            // dtpCikisTarihi
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(623, 109);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(144, 27);
-            this.dateTimePicker3.TabIndex = 32;
+            this.dtpCikisTarihi.Location = new System.Drawing.Point(623, 109);
+            this.dtpCikisTarihi.Name = "dtpCikisTarihi";
+            this.dtpCikisTarihi.Size = new System.Drawing.Size(144, 27);
+            this.dtpCikisTarihi.TabIndex = 32;
             // 
-            // dateTimePicker2
+            // dtpRezervasyonTarihi
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(623, 69);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(144, 27);
-            this.dateTimePicker2.TabIndex = 31;
+            this.dtpRezervasyonTarihi.Location = new System.Drawing.Point(623, 69);
+            this.dtpRezervasyonTarihi.Name = "dtpRezervasyonTarihi";
+            this.dtpRezervasyonTarihi.Size = new System.Drawing.Size(144, 27);
+            this.dtpRezervasyonTarihi.TabIndex = 31;
             // 
             // label10
             // 
@@ -152,40 +164,41 @@
             this.label9.TabIndex = 29;
             this.label9.Text = "Rezervasyon Tarihi :";
             // 
-            // textBox5
+            // txtTelefonNo
             // 
-            this.textBox5.Location = new System.Drawing.Point(166, 144);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(125, 27);
-            this.textBox5.TabIndex = 28;
+            this.txtTelefonNo.Location = new System.Drawing.Point(166, 144);
+            this.txtTelefonNo.Name = "txtTelefonNo";
+            this.txtTelefonNo.Size = new System.Drawing.Size(125, 27);
+            this.txtTelefonNo.TabIndex = 28;
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(166, 111);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 27);
-            this.textBox4.TabIndex = 27;
+            this.txtEmail.Location = new System.Drawing.Point(166, 111);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(125, 27);
+            this.txtEmail.TabIndex = 27;
             // 
-            // textBox3
+            // txtRezervasyonTc
             // 
-            this.textBox3.Location = new System.Drawing.Point(166, 78);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(125, 27);
-            this.textBox3.TabIndex = 26;
+            this.txtRezervasyonTc.Location = new System.Drawing.Point(166, 78);
+            this.txtRezervasyonTc.Name = "txtRezervasyonTc";
+            this.txtRezervasyonTc.Size = new System.Drawing.Size(125, 27);
+            this.txtRezervasyonTc.TabIndex = 26;
+            this.txtRezervasyonTc.TextChanged += new System.EventHandler(this.label10_Click);
             // 
-            // textBox2
+            // txtSoyad
             // 
-            this.textBox2.Location = new System.Drawing.Point(166, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
-            this.textBox2.TabIndex = 25;
+            this.txtSoyad.Location = new System.Drawing.Point(166, 48);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(125, 27);
+            this.txtSoyad.TabIndex = 25;
             // 
-            // textBox1
+            // txtAd
             // 
-            this.textBox1.Location = new System.Drawing.Point(166, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 24;
+            this.txtAd.Location = new System.Drawing.Point(166, 18);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(125, 27);
+            this.txtAd.TabIndex = 24;
             // 
             // label5
             // 
@@ -233,26 +246,26 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "Ad :";
             // 
-            // textBox7
+            // txtCvv
             // 
-            this.textBox7.Location = new System.Drawing.Point(178, 80);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(125, 27);
-            this.textBox7.TabIndex = 15;
+            this.txtCvv.Location = new System.Drawing.Point(178, 80);
+            this.txtCvv.Name = "txtCvv";
+            this.txtCvv.Size = new System.Drawing.Size(125, 27);
+            this.txtCvv.TabIndex = 15;
             // 
-            // textBox6
+            // txtKrediKarti
             // 
-            this.textBox6.Location = new System.Drawing.Point(178, 37);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(125, 27);
-            this.textBox6.TabIndex = 12;
+            this.txtKrediKarti.Location = new System.Drawing.Point(178, 37);
+            this.txtKrediKarti.Name = "txtKrediKarti";
+            this.txtKrediKarti.Size = new System.Drawing.Size(125, 27);
+            this.txtKrediKarti.TabIndex = 12;
             // 
-            // dateTimePicker1
+            // dtpSonKullanmaTarihi
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(178, 130);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(140, 27);
-            this.dateTimePicker1.TabIndex = 12;
+            this.dtpSonKullanmaTarihi.Location = new System.Drawing.Point(178, 130);
+            this.dtpSonKullanmaTarihi.Name = "dtpSonKullanmaTarihi";
+            this.dtpSonKullanmaTarihi.Size = new System.Drawing.Size(140, 27);
+            this.dtpSonKullanmaTarihi.TabIndex = 12;
             // 
             // label8
             // 
@@ -281,34 +294,34 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Kredi kart No:";
             // 
-            // groupBox2
+            // grpStandartRezervasyon
             // 
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Location = new System.Drawing.Point(25, 244);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(403, 252);
-            this.groupBox2.TabIndex = 24;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Standart Rezervasyon";
+            this.grpStandartRezervasyon.Controls.Add(this.txtCvv);
+            this.grpStandartRezervasyon.Controls.Add(this.label6);
+            this.grpStandartRezervasyon.Controls.Add(this.txtKrediKarti);
+            this.grpStandartRezervasyon.Controls.Add(this.label7);
+            this.grpStandartRezervasyon.Controls.Add(this.dtpSonKullanmaTarihi);
+            this.grpStandartRezervasyon.Controls.Add(this.label8);
+            this.grpStandartRezervasyon.Location = new System.Drawing.Point(25, 244);
+            this.grpStandartRezervasyon.Name = "grpStandartRezervasyon";
+            this.grpStandartRezervasyon.Size = new System.Drawing.Size(403, 252);
+            this.grpStandartRezervasyon.TabIndex = 24;
+            this.grpStandartRezervasyon.TabStop = false;
+            this.grpStandartRezervasyon.Text = "Standart Rezervasyon";
             // 
-            // groupBox3
+            // grpRandevuIptal
             // 
-            this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Location = new System.Drawing.Point(453, 244);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(411, 252);
-            this.groupBox3.TabIndex = 36;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Randevu İptal";
+            this.grpRandevuIptal.Controls.Add(this.label13);
+            this.grpRandevuIptal.Controls.Add(this.btnRandevuIptal);
+            this.grpRandevuIptal.Controls.Add(this.btnAra);
+            this.grpRandevuIptal.Controls.Add(this.dgvIptal);
+            this.grpRandevuIptal.Controls.Add(this.txtIptalTC);
+            this.grpRandevuIptal.Location = new System.Drawing.Point(453, 244);
+            this.grpRandevuIptal.Name = "grpRandevuIptal";
+            this.grpRandevuIptal.Size = new System.Drawing.Size(411, 252);
+            this.grpRandevuIptal.TabIndex = 36;
+            this.grpRandevuIptal.TabStop = false;
+            this.grpRandevuIptal.Text = "Randevu İptal";
             // 
             // label13
             // 
@@ -319,106 +332,96 @@
             this.label13.TabIndex = 28;
             this.label13.Text = "TcNo:";
             // 
-            // button3
+            // btnRandevuIptal
             // 
-            this.button3.Location = new System.Drawing.Point(251, 175);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 32);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "Randevu İptal";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnRandevuIptal.Location = new System.Drawing.Point(251, 175);
+            this.btnRandevuIptal.Name = "btnRandevuIptal";
+            this.btnRandevuIptal.Size = new System.Drawing.Size(137, 32);
+            this.btnRandevuIptal.TabIndex = 27;
+            this.btnRandevuIptal.Text = "Randevu İptal";
+            this.btnRandevuIptal.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnAra
             // 
-            this.button2.Location = new System.Drawing.Point(205, 20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(42, 29);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Ara";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAra.Location = new System.Drawing.Point(205, 20);
+            this.btnAra.Name = "btnAra";
+            this.btnAra.Size = new System.Drawing.Size(42, 29);
+            this.btnAra.TabIndex = 26;
+            this.btnAra.Text = "Ara";
+            this.btnAra.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAra.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvIptal
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 58);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(223, 149);
-            this.dataGridView1.TabIndex = 25;
+            this.dgvIptal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvIptal.Location = new System.Drawing.Point(22, 58);
+            this.dgvIptal.Name = "dgvIptal";
+            this.dgvIptal.RowHeadersWidth = 51;
+            this.dgvIptal.RowTemplate.Height = 29;
+            this.dgvIptal.Size = new System.Drawing.Size(223, 149);
+            this.dgvIptal.TabIndex = 25;
             // 
-            // textBox8
+            // txtIptalTC
             // 
-            this.textBox8.Location = new System.Drawing.Point(74, 25);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(125, 27);
-            this.textBox8.TabIndex = 24;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(491, 194);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(172, 24);
-            this.radioButton1.TabIndex = 36;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Standart Rezervasyon";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.txtIptalTC.Location = new System.Drawing.Point(74, 25);
+            this.txtIptalTC.Name = "txtIptalTC";
+            this.txtIptalTC.Size = new System.Drawing.Size(125, 27);
+            this.txtIptalTC.TabIndex = 24;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(947, 496);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpRandevuIptal);
+            this.Controls.Add(this.grpStandartRezervasyon);
+            this.Controls.Add(this.grpRezervasyonEkrani);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.grpRezervasyonEkrani.ResumeLayout(false);
+            this.grpRezervasyonEkrani.PerformLayout();
+            this.grpStandartRezervasyon.ResumeLayout(false);
+            this.grpStandartRezervasyon.PerformLayout();
+            this.grpRandevuIptal.ResumeLayout(false);
+            this.grpRandevuIptal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIptal)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private GroupBox groupBox1;
-        private TextBox textBox7;
-        private TextBox textBox6;
-        private DateTimePicker dateTimePicker1;
+        private GroupBox grpRezervasyonEkrani;
+        private TextBox txtCvv;
+        private TextBox txtKrediKarti;
+        private DateTimePicker dtpSonKullanmaTarihi;
         private Label label8;
         private Label label7;
         private Label label6;
-        private Button button1;
-        private Label label12;
+        private Button btnOnay;
+        private Label lblFiyat;
         private Label label11;
-        private DateTimePicker dateTimePicker3;
-        private DateTimePicker dateTimePicker2;
+        private DateTimePicker dtpCikisTarihi;
+        private DateTimePicker dtpRezervasyonTarihi;
         private Label label10;
         private Label label9;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtTelefonNo;
+        private TextBox txtEmail;
+        private TextBox txtRezervasyonTc;
+        private TextBox txtSoyad;
+        private TextBox txtAd;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
-        private GroupBox groupBox2;
-        private GroupBox groupBox3;
+        private GroupBox grpStandartRezervasyon;
+        private GroupBox grpRandevuIptal;
         private Label label13;
-        private Button button3;
-        private Button button2;
-        private DataGridView dataGridView1;
-        private TextBox textBox8;
+        private Button btnRandevuIptal;
+        private Button btnAra;
+        private DataGridView dgvIptal;
+        private TextBox txtIptalTC;
         private RadioButton radioButton1;
     }
 }
