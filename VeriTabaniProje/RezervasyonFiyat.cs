@@ -11,13 +11,15 @@ namespace VeriTabaniProje
 
     public class RezervasyonFiyat
     {
-        public const double SabitFiyat = 250;
+        public int SabitFiyat = 250;
         public double OnodemeliFiyat { get; set; }
         public double AtmısGunOncedenFiyat { get; set; }
         public string Mesaj { get; set; }
+        public TimeSpan Gun { get; set; }
         public DateTime GirisTarihi { get; set; }
         public DateTime CikisTarihi { get; set; }
 
+            
         public string Fiyat(DateTimePicker giris, DateTimePicker cikis, GroupBox groupBox)
         {
             GirisTarihi = giris.Value;
@@ -29,11 +31,14 @@ namespace VeriTabaniProje
             {
                 OnodemeliFiyat = (SabitFiyat * 75) / 100;
                 Mesaj = OnodemeliFiyat.ToString();
+                groupBox.Enabled = true;
+
             }
             else if (Math.Abs(Gun.Days) < 90 && Math.Abs(Gun.Days) >= 60)
             {
-                OnodemeliFiyat = (SabitFiyat * 85) / 100;
+                AtmısGunOncedenFiyat = (SabitFiyat * 85) / 100;
                 Mesaj = AtmısGunOncedenFiyat.ToString();
+                groupBox.Enabled = false;
             }
             else if (Math.Abs(Gun.Days) < 60)
             {

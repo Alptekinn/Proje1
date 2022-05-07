@@ -10,6 +10,6 @@ namespace VeriTabaniProje
 {
     public class DataBase
     {
-        public SqlConnection baglanti = new SqlConnection(@"Data Source=34.133.45.229;Initial Catalog=OtelOtomasyonu;Persist Security Info=True;User ID=sqlserver;Password=aaaa");
+        public SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-FH90DII;Initial Catalog=OtelOtomasyonu;Integrated Security=True");
     }
 }

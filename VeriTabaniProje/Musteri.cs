@@ -17,6 +17,12 @@ namespace VeriTabaniProje
         public string TC { get; set; }
         public string TelefonNo { get; set; }
         public string Mail { get; set; }
+        public string KrediKartNo { get; set; }
+        public string CVV { get; set; }
+        public string SonKullanmaTarihi { get; set; }
+
+
+
         public DataBase db;
 
         public Musteri()
@@ -42,7 +48,6 @@ namespace VeriTabaniProje
 
         public void musteriIDCek()
         {
-
             SqlCommand kmt = new SqlCommand("select MusteriID from Musteri where MusteriAd='" + Ad + "'");
             SqlDataReader dr;
             kmt.Connection = db.baglanti;
@@ -63,6 +68,22 @@ namespace VeriTabaniProje
             rezervasyonEkle.Parameters.AddWithValue("@q2", giris.Value);
             rezervasyonEkle.Parameters.AddWithValue("@q3", cikis.Value);
             rezervasyonEkle.Parameters.AddWithValue("@q4", fiyat);
+
+            rezervasyonEkle.ExecuteNonQuery();
+            db.baglanti.Close();
+        }
+
+        public void KrediTablosunaEkle(string krediNo, string cvv, DateTimePicker sonKullanma)
+        {
+
+            db.baglanti.Open();
+
+
+            SqlCommand rezervasyonEkle = new SqlCommand("insert into Kredi (MusteriID, KartNo, SonKullanma, Cvc) values (@q1,@q2,@q3, @q4)  ", db.baglanti);
+            rezervasyonEkle.Parameters.AddWithValue("@q1", ID);
+            rezervasyonEkle.Parameters.AddWithValue("@q2", krediNo);
+            rezervasyonEkle.Parameters.AddWithValue("@q3", sonKullanma.Value);
+            rezervasyonEkle.Parameters.AddWithValue("@q4", cvv);
 
             rezervasyonEkle.ExecuteNonQuery();
             db.baglanti.Close();
