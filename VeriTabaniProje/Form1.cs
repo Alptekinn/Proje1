@@ -15,7 +15,7 @@ namespace VeriTabaniProje
     public partial class Form1 : Form
     {
         DataBase db = new DataBase();
-        RezervasyonFiyat r = new RezervasyonFiyat();
+        Musteri m = new Musteri(); 
         
         public void verileriGoster(string veriler)
         {
@@ -38,15 +38,15 @@ namespace VeriTabaniProje
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Musteri m = new Musteri();
 
             m.Ad=txtAd.Text;
             m.Soyad=txtSoyad.Text;
             m.TC = txtRezervasyonTc.Text;
             m.Mail=txtEmail.Text; 
             m.TelefonNo=txtTelefonNo.Text;
+            //m.RezervasyonFiyat.RezervasyonTipID
 
-            if (grpStandartRezervasyon.Enabled ==true)
+            if (grpStandartRezervasyon.Enabled == true )
             {
                 m.musteriBilgileriniVeritabaninaYukle();
                 m.musteriIDCek();
@@ -70,7 +70,8 @@ namespace VeriTabaniProje
         private void btnAra_Click(object sender, EventArgs e)
         {
             db.baglanti.Open();
-            string veriler = "SELECT t1.TcNo,t1.MusteriAd,t1.MusteriSoyad,T2.RezervasyonId FROM Musteri AS t1 INNER JOIN Rezervasyon AS t2 ON t1.MusteriID = t2.MusteriID where TcNo = '" +txtIptalTC.Text + "' ";
+            string veriler = "SELECT t1.TcNo,t1.MusteriAd,t1.MusteriSoyad,T2.RezervasyonId FROM " +
+                "Musteri AS t1 INNER JOIN Rezervasyon AS t2 ON t1.MusteriID = t2.MusteriID where TcNo = '" +txtIptalTC.Text + "' ";
             SqlCommand komut = new SqlCommand(veriler, db.baglanti);
             komut.ExecuteNonQuery();
             db.baglanti.Close();
@@ -103,6 +104,7 @@ namespace VeriTabaniProje
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
+            RezervasyonFiyat r = new RezervasyonFiyat();
             db.baglanti.Open();
             foreach (DataGridViewRow dgrow in dgvDegisiklik.SelectedRows)
             {
@@ -128,9 +130,16 @@ namespace VeriTabaniProje
 
         private void dtpCikisTarihi_CloseUp(object sender, EventArgs e)
         {
+            
+            m.RezervasyonFiyat.Fiyat(dtpRezervasyonTarihi, dtpCikisTarihi, grpStandartRezervasyon);
+            lblFiyat.Text = m.RezervasyonFiyat.Mesaj;
+        }
 
-            r.Fiyat(dtpRezervasyonTarihi, dtpCikisTarihi, grpStandartRezervasyon);
-            lblFiyat.Text = r.Mesaj;
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            CalisanGiris c = new CalisanGiris();
+            c.Show();
+            this.Hide();
         }
     }
 }

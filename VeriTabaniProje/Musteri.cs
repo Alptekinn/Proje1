@@ -12,6 +12,7 @@ namespace VeriTabaniProje
     public class Musteri
     {
         public int ID { get; set; }
+        public int RezervasyonTipID { get; set; }
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public string TC { get; set; }
@@ -21,6 +22,7 @@ namespace VeriTabaniProje
         public string CVV { get; set; }
         public string SonKullanmaTarihi { get; set; }
 
+        public RezervasyonFiyat RezervasyonFiyat;
 
 
         public DataBase db;
@@ -29,10 +31,13 @@ namespace VeriTabaniProje
         {
             DataBase data = new DataBase();
             this.db = data;
+            RezervasyonFiyat r= new RezervasyonFiyat();
+            this.RezervasyonFiyat= r;
         }
 
         public void musteriBilgileriniVeritabaninaYukle()
         {
+            
             db.baglanti.Open();
             SqlCommand kayitekle = new SqlCommand("insert into Musteri (MusteriAd,MusteriSoyad,TcNo,Mail,TelefonNo) values (@p1,@p2,@p3,@p4,@p5)", db.baglanti);
 
@@ -62,12 +67,15 @@ namespace VeriTabaniProje
 
         public void IDyiRezervasyonTablosunaEkle(int fiyat, DateTimePicker giris, DateTimePicker cikis)
         {
+            
+            RezervasyonTipID=RezervasyonFiyat.RezervasyonTipID;
             db.baglanti.Open();
-            SqlCommand rezervasyonEkle = new SqlCommand("insert into Rezervasyon (MusteriID, GirisTarihi, CikisTarihi, Fiyat) values (@q1,@q2,@q3, @q4)  ", db.baglanti);
+            SqlCommand rezervasyonEkle = new SqlCommand("insert into Rezervasyon (MusteriID, RezervasyonTipID , GirisTarihi, CikisTarihi, Fiyat) values (@q1,@q2,@q3, @q4, @q5)  ", db.baglanti);
             rezervasyonEkle.Parameters.AddWithValue("@q1", ID);
-            rezervasyonEkle.Parameters.AddWithValue("@q2", giris.Value);
-            rezervasyonEkle.Parameters.AddWithValue("@q3", cikis.Value);
-            rezervasyonEkle.Parameters.AddWithValue("@q4", fiyat);
+            rezervasyonEkle.Parameters.AddWithValue("@q2", RezervasyonFiyat.RezervasyonTipID);
+            rezervasyonEkle.Parameters.AddWithValue("@q3", giris.Value);
+            rezervasyonEkle.Parameters.AddWithValue("@q4", cikis.Value);
+            rezervasyonEkle.Parameters.AddWithValue("@q5", fiyat);
 
             rezervasyonEkle.ExecuteNonQuery();
             db.baglanti.Close();

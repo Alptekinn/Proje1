@@ -65,6 +65,7 @@
             this.btnAra = new System.Windows.Forms.Button();
             this.dgvDegisiklik = new System.Windows.Forms.DataGridView();
             this.txtIptalTC = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.grpRezervasyonEkrani.SuspendLayout();
             this.grpStandartRezervasyon.SuspendLayout();
             this.grpRandevuIptal.SuspendLayout();
@@ -421,11 +422,22 @@
             this.txtIptalTC.Size = new System.Drawing.Size(125, 27);
             this.txtIptalTC.TabIndex = 24;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(866, 242);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(313, 29);
+            this.button1.TabIndex = 37;
+            this.button1.Text = "Personel form";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1246, 657);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.grpRandevuIptal);
             this.Controls.Add(this.grpRezervasyonEkrani);
             this.Name = "Form1";
@@ -482,5 +494,6 @@
         private Label label7;
         private DateTimePicker dtpSonKullanmaTarihi;
         private Label label8;
+        private Button button1;
     }
 }
