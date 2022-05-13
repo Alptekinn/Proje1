@@ -8,7 +8,6 @@ using System.Data.SqlClient;
 
 namespace VeriTabaniProje
 {
-
     public class RezervasyonFiyat
     {
         public int SabitFiyat = 250;
@@ -16,16 +15,14 @@ namespace VeriTabaniProje
         public double AtmısGunOncedenFiyat { get; set; }
         public int RezervasyonTipID { get; set; }
         public string Mesaj { get; set; }
-        public TimeSpan Gun { get; set; }
         public DateTime GirisTarihi { get; set; }
         public DateTime CikisTarihi { get; set; }
 
-            
         public string Fiyat(DateTimePicker giris, DateTimePicker cikis, GroupBox groupBox)
         {
             GirisTarihi = giris.Value;
             CikisTarihi = cikis.Value;
-            //Musteri m = new Musteri();
+
             TimeSpan Gun = CikisTarihi - GirisTarihi;
 
             if (Math.Abs(Gun.Days) >= 90 && Math.Abs(Gun.Days) <= 365)

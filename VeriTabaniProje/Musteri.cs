@@ -24,6 +24,7 @@ namespace VeriTabaniProje
 
         public RezervasyonFiyat RezervasyonFiyat;
 
+        public frmCheckIn frmCheckIn;
 
         public DataBase db;
 
@@ -33,6 +34,8 @@ namespace VeriTabaniProje
             this.db = data;
             RezervasyonFiyat r= new RezervasyonFiyat();
             this.RezervasyonFiyat= r;
+            frmCheckIn f= new frmCheckIn();
+            this.frmCheckIn = f;
         }
 
         public void musteriBilgileriniVeritabaninaYukle()
@@ -70,7 +73,7 @@ namespace VeriTabaniProje
             
             RezervasyonTipID=RezervasyonFiyat.RezervasyonTipID;
             db.baglanti.Open();
-            SqlCommand rezervasyonEkle = new SqlCommand("insert into Rezervasyon (MusteriID, RezervasyonTipID , GirisTarihi, CikisTarihi, Fiyat) values (@q1,@q2,@q3, @q4, @q5)  ", db.baglanti);
+            SqlCommand rezervasyonEkle = new SqlCommand("insert into Rezervasyon (MusteriID,RezervasyonTipID , GirisTarihi, CikisTarihi, Fiyat) values (@q1,@q2,@q3, @q4, @q5)  ", db.baglanti);
             rezervasyonEkle.Parameters.AddWithValue("@q1", ID);
             rezervasyonEkle.Parameters.AddWithValue("@q2", RezervasyonFiyat.RezervasyonTipID);
             rezervasyonEkle.Parameters.AddWithValue("@q3", giris.Value);

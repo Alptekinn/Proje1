@@ -25,3 +25,4 @@ C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTaba
 C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.CalisanGiris.resources
 C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.Personel.resources
 C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.Yonetici.resources
+C:\Users\Alptekin\source\repos\VeriTabaniProje\obj\Debug\net6.0-windows\VeriTabaniProje.frmCheckIn.resources

@@ -141,5 +141,12 @@ namespace VeriTabaniProje
             c.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmCheckIn frmCheckIn = new frmCheckIn();
+            frmCheckIn.Show();
+            this.Hide();
+        }
     }
 }
